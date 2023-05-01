@@ -49,27 +49,31 @@ The system asks to login before you have an existing account or not. If not, the
 
 
 FUNCTIONS AVAILABLE TO USERS IN THE FILE SYSTEM:
-1. List Files: \
+1. User Key Revocation: \
+This function is for revoking user public and private keys, and generates new keys. Requires user to be logged in.
+>	Syntax - restore [filename]
+
+2. List Files: \
 This function is used displaying the files currently being stored in the directory. This is to view the files present in the system. Each file name will be displayed in an encrypted form. 
 >	Syntax: ls
 
-2. Create a File: \
+3. Create a File: \
 This function is used for creating a file to be stored in the directory. While creating the file, the user needs to specify the file name and the permissions associated with the file.
 >	Syntax - create [filename]
 
-3. Write to a File: \
+4. Write to a File: \
 The user can write content to an existing file using this function, and this can be done only if that user has WRITE permissions.
 >	Syntax - write [filename]
 
-4. Read a File:  \
-This function is for reading the content present in an existing file in the directory, only if the logged in user has READ permissions.
+5. Read a File:  \
+This function is to read the content present in an existing file in the directory, only if the logged in user has READ permissions.
 >	Syntax - read [filename]
 
-5. Delete a File: \
-This function is for deleting a file stored the directory, only if the logged in user has DELETE permissions.
+6. Delete a File: \
+This function is to delete a file stored the directory, only if the logged in user has DELETE permissions.
 >	Syntax - delete [filename]
 
-6. Restore a File: \
-This function is for restoring a file stored in the directory, only if the logged in user has RESTORE permissions.
+7. Restore a File: \
+This function is to restore a file stored in the directory, only if the logged in user has RESTORE permissions.
 >	Syntax - restore [filename]
 
